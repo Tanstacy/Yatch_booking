@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+.gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../pics/Slider/img1.jpg'); /* Black overlay with 60% opacity */
+    background-size: cover;
+    background-position: center;
+    font-family: garamond;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically */
+}
+
+.container h2{
+    font: text-serif;
+	font-size: 50px;
+	color: white;
+	margin-top: -8%;
+    padding-bottom: 3%;
+	padding-left: 0px;
+	margin-left: -5%;
+	text-shadow: 4px 8px 16px black;
+	margin-bottom: -3%;
+}
+.gal_row{
+	justify-content: space-between;
+	align-items: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-top: 5px;
+}
+.gal_clm1{
+	flex-basis: 40%;
+	margin-top: -6%;
+}
+.gal_clm1 img{
+	width: 125%;
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 4px black;
+}
+/*.gal_clm1_sub1,
+.gal_clm1_sub2{
+    display: inline-flex;
+
+}
+.gal_clm1_sub1 span{
+    flex-basis: 20%;
+    margin-top: 90%;
+    color: darkblue;
+    font-size: 30px;
+    margin-left: 2%;
+}
+.gal_clm1_sub1 p{
+    font-size: 18px;
+    color: white;
+    margin-top: 2%;
+}
+.gal_clm1_sub2 span{
+    flex-basis: 80%;
+    margin-top: 90%;
+    color: white;
+    font-size: 30px;
+    margin-left: 2%;
+}
+.gal_clm1_sub1 p{
+    font-size: 18px;
+    color: white;
+    margin-top: 2%;
+    }*/
+.gal_clm2{
+	flex-basis: 52%;
+	padding-top: 60px;
+	width: 100%;
+}
+.carousel-inner{
+	width: 120%;
+	height: 150%;
+	box-shadow: 8px 8px 16px black;
+}
+#close {
+    position: absolute; /* Position it relative to the window */
+    top: 2%; /* 10px from the top of the window */
+    right: 10px; /* 10px from the right edge of the window */
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+
+  /* Style the icon itself */
+  #close i {
+    font-size: 2rem; /* Increase the icon size */
+    text-shadow: 4px 4px 8px black;
+    color: white; /* Set the color of the icon */
+    cursor: pointer; /* Make the icon appear clickable */
+    padding: 10px; /* Add padding to make it easier to click */
+    transition: color 0.3s ease; /* Smooth transition effect when hovering */
+  }
+
+  /* Change icon color on hover */
+  #close i:hover {
+    color: lightblue; /* Change color to red when hovered */
+  }
+
+  /* Make the icon size responsive */
+  @media (max-width: 768px) {
+    #close i {
+      font-size: 1.5rem; /* Decrease icon size on smaller screens */
+    }
+  }
+
+}
+.carousel-inner{
+	box-shadow: 4px 8px 16px black ;
+}
+/*css for smaller screen------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px){
+    .gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('pics/Slider/img1.jpg'); /* Black overlay with 60% opacity */
+    background-size: cover;
+    background-position: center;
+    font-family: garamond;
+    width: 100%;
+    height: 100vh;
+    margin-top: 6%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically */
+}
+
+.container h2{
+    font-size: 30px;
+    color: white;
+    padding-top: -2%;
+    padding-bottom: 3%;
+    padding-left: 0px;
+    margin-left: 0;
+    text-shadow: 4px 8px 16px black;
+    margin-bottom: -3%;
+}
+.gal_row{
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.gal_clm1{
+    flex-basis: 40%;
+    margin-top: -2%;
+}
+.gal_clm1 img{
+    width: 150%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px black;
+}
+.gal_clm2{
+    flex-basis: 50%;
+    padding-top: 70px;
+    width: 100%;
+}
+.carousel-inner{
+    width: 100%;
+    height: 150%;
+    box-shadow: 8px 8px 16px black;
+}
+#close {
+    position: absolute; /* Position it relative to the window */
+    top: 19%; /* 10px from the top of the window */
+    right: 10px; /* 10px from the right edge of the window */
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+
+  /* Style the icon itself */
+  #close i {
+    font-size: 2rem; /* Increase the icon size */
+    text-shadow: 4px 4px 8px black;
+    color: white; /* Set the color of the icon */
+    cursor: pointer; /* Make the icon appear clickable */
+    padding: 10px; /* Add padding to make it easier to click */
+    transition: color 0.3s ease; /* Smooth transition effect when hovering */
+  }
+
+  /* Change icon color on hover */
+  #close i:hover {
+    color: blue; /* Change color to red when hovered */
+  }
+
+  /* Make the icon size responsive */
+  @media (max-width: 768px) {
+    #close i {
+      font-size: 1.5rem; /* Decrease icon size on smaller screens */
+    }
+  }
+
+}
+.carousel-inner{
+    box-shadow: 4px 8px 16px black ;
+}
+}
+

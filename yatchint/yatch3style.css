@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+.gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('pics/Slider/img3.jpg'); /* Black overlay with 60% opacity */
+    background-size: cover;
+    background-position: center;
+    font-family: garamond;
+    width: 100%;
+    height: 100vh;
+    margin-top: 6%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically */
+}
+
+.container h2{
+	font-size: 50px;
+	color: white;
+	padding-top: 5%;
+	padding-left: 0px;
+	margin-left: 0;
+	text-shadow: 4px 8px 16px black;
+	margin-bottom: -3%;
+}
+.gal_row{
+	justify-content: space-between;
+	align-items: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+.gal_clm1{
+	flex-basis: 40%;
+	margin-top: -2%;
+}
+.gal_clm1 img{
+	width: 132%;
+	height: 310px;
+	border-radius: 15px;
+	box-shadow: 4px 4px 4px black;
+}
+.gal_clm2{
+	flex-basis: 50%;
+	padding-top: 70px;
+	width: 100%;
+}
+.gal_clm2 img{
+	flex-basis: 40%;
+	margin-top: 12%;
+	width: 100%;
+	height: 300px;
+	box-shadow: 4px 8px 16px black;
+}
+#close {
+    position: absolute; /* Position it relative to the window */
+    top: 19%; /* 10px from the top of the window */
+    right: 10px; /* 10px from the right edge of the window */
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+
+  /* Style the icon itself */
+  #close i {
+    font-size: 2rem; /* Increase the icon size */
+    text-shadow: 4px 4px 8px black;
+    color: white; /* Set the color of the icon */
+    cursor: pointer; /* Make the icon appear clickable */
+    padding: 10px; /* Add padding to make it easier to click */
+    transition: color 0.3s ease; /* Smooth transition effect when hovering */
+  }
+
+  /* Change icon color on hover */
+  #close i:hover {
+    color: blue; /* Change color to red when hovered */
+  }
+
+  /* Make the icon size responsive */
+  @media (max-width: 768px) {
+    #close i {
+      font-size: 1.5rem; /* Decrease icon size on smaller screens */
+    }
+  }
+
+}
+
